@@ -2,6 +2,8 @@ package com.weicong.gotravelling;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.bmob.BmobConfiguration;
@@ -137,6 +139,10 @@ public class MyApplication extends Application {
      * 释放所有管理类的实例
      */
     private static void clearManagers() {
+        /*
+        释放之前先存储热门路线数据
+         */
+        SharedPreferences.Editor editor =  PreferenceManager.getDefaultSharedPreferences(getInstance()).edit();
         BmobManager.clear();
         UserManager.clear();
         MapAPIManager.clear();

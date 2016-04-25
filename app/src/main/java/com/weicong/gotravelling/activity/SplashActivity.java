@@ -35,6 +35,9 @@ public class SplashActivity extends AppCompatActivity {
      * 获取热门路线
      */
     private void getHeatRoute() {
+        /*
+        这里每次打开都要去访问数据库，严重影响速度，在应用退出时永久存储，下次开启时读取
+         */
         BmobQuery<Route> query = new BmobQuery<>();
         query.addWhereGreaterThan("watchNum", 30);
         query.include("creator");
