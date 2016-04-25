@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">同享旅行</string>
+    <string name="app_description">
+        记录你的路线轨迹，分享世界的自然景色！
+    </string>
+    <string name="app_version">1.0.0</string>
+    <string name="share_app">分享 APP</string>
+    <string name="check_app">检测新版本</string>
+    <string name="feedback">意见反馈</string>
+
+    <!-- 抽屉菜单相关 -->
+    <string name="drawer_item_account">个人</string>
+    <string name="drawer_item_favorite">收藏</string>
+    <string name="drawer_item_route">路线</string>
+    <string name="drawer_item_sign">签到</string>
+    <string name="drawer_item_settings">设置</string>
+    <string name="drawer_item_exit">退出</string>
+    <string name="drawer_item_login">登录或注册</string>
+    <string name="drawer_item_other_login">其他账号登录</string>
+    <string name="drawer_item_qq_login">QQ登录</string>
+    <string name="drawer_item_weibo_login">微博登录</string>
+    <string name="drawer_item_weixin_login">微信登录</string>
+    <string name="drawer_item_follow">关注</string>
+
+    <!-- 选项菜单相关 -->
+    <string name="action_search">搜索</string>
+    <string name="action_notification">通知</string>
+    <string name="action_about">关于</string>
+    <string name="action_logout">登出</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_location">在地图上显示</string>
+    <string name="action_home">首页</string>
+    <string name="action_delete">删除</string>
+    <string name="action_upload">上传</string>
+    <string name="action_share">分享</string>
+    <string name="action_creator">路线创造者</string>
+    <string name="action_nearby">附近的人</string>
+    <string name="action_clear">清除</string>
+
+    <!-- 登录注册相关 -->
+    <string name="dialog_login_or_register">登录或注册</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password">密码</string>
+    <string name="phone_or_email">手机号或邮箱</string>
+    <string name="username">用户名</string>
+    <string name="next">下一步</string>
+    <string name="code">验证码</string>
+    <string name="re_get_code">重新获取</string>
+    <string name="finish_register">完成注册</string>
+    <string name="can_not_login">无法登录？</string>
+    <string name="reset_password">重置密码</string>
+    <string name="can_not_login_message">我们提供了两种方式帮您重新登录</string>
+    <string name="use_phone_code_login">使用手机验证码登录</string>
+    <string name="reset_password_message">我们提供了两种方式帮您重置密码</string>
+    <string name="phone">手机号</string>
+    <string name="email">邮箱</string>
+    <string name="get_code">获取验证码</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- 个人信息相关 -->
+    <string name="my_route">我的路线</string>
+    <string name="my_follow">我关注的人</string>
+    <string name="comment_route">评论过的路线</string>
+    <string name="finished_route">结束的路线</string>
+    <string name="sign_sight">签到的景点</string>
+    <string name="add_sight">自己新建的景点</string>
+    <string name="travelling_route">进行的路线</string>
+    <string name="description">个人介绍</string>
+    <string name="one_word_intro">一句话介绍</string>
+    <string name="age">年龄:</string>
+    <string name="gender">性别:</string>
+    <string name="other_info">其他资料</string>
+    <string name="phone_info">手机</string>
+    <string name="city">城市</string>
+    <string name="modify_birth_year">修改出生年份</string>
+    <string name="input_bidth_year">输出自己的出生年份。1915-2015年</string>
+    <string name="birth_year">出生年份</string>
+    <string name="completed">完成</string>
+    <string name="modify_gender">修改性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="modify_intro">修改一句话介绍</string>
+    <string name="intro_tip">业余爱好、职业技能。1-30字</string>
+    <string name="modify_description">修改个人介绍</string>
+    <string name="description_tip">用一段话介绍自己。1-200字</string>
+    <string name="modify_password">修改密码</string>
+    <string name="password_tip">密码长度必须不小于6位。</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="modify_phone">修改手机号</string>
+    <string name="modify_email">修改邮箱</string>
+    <string name="modify_info">编辑资料</string>
+    <string name="select_city">选择城市</string>
+    <string name="notification">消息</string>
+    <string name="notification_empty">还没有通知消息</string>
+
+    <!-- 搜索相关 -->
+    <string name="search_sight">景点</string>
+    <string name="search_route">路线</string>
+    <string name="search_hint">搜索景点和路线</string>
+    
+    <!-- 路线相关 -->
+    <string name="heat_route">热门路线</string>
+    <string name="empty_list">列表为空</string>
+    <string name="add_route">新增路线</string>
+    <string name="route_name">路线名称</string>
+    <string name="route_description">路线描述</string>
+    <string name="modify_route_description">修改路线描述</string>
+    <string name="route_description_tip">用一段话描述该路线。1-200字</string>
+    <string name="delete_route">删除路线</string>
+    <string name="daily">日程</string>
+    <string name="move_up">上移</string>
+    <string name="move_down">下移</string>
+    <string name="add_daily">添加日程</string>
+    <string name="daily_remark">日程备注（1-30字）</string>
+    <string name="start_route_title">Start</string>
+    <string name="start_route_message">是否开始当前路线？</string>
+    <string name="cancel_route_title">Cancel</string>
+    <string name="cancel_route_message">是否取消当前路线？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="start_route_success">成功开始这条路线（可以去签到）</string>
+    <string name="cancel_route_success">取消路线成功</string>
+    <string name="start_route_error">无法开始，因为已经开始了一条路线</string>
+    <string name="map">地图</string>
+    <string name="detail">详情</string>
+    <string name="collect_sight">收藏的景点</string>
+    <string name="collect_route">收藏的路线</string>
+    <string name="delete_sight">删除景点</string>
+    <string name="route_finish_notice">通知</string>
+    <string name="route_finish_notice_message">该路线已经结束，不能再修改。</string>
+    <string name="know">知道了</string>
+
+    <!-- 路线签到 -->
+    <string name="no_route_start_message">您还没开始任何路线</string>
+    <string name="note">旅游小记</string>
+    <string name="add_note">新增旅游小记</string>
+    <string name="add_note_tip">记下此刻的心情或趣事。1-200字</string>
+    <string name="delete_note_message">您确定删除该旅游小记？</string>
+    <string name="photo">图片</string>
+    <string name="select_photo">选择图片</string>
+    <string name="select_photo_empty">您还没选中任何图片</string>
+    <string name="uploading_image">在后台上传图片，请稍后...</string>
+    <string name="delete_image_message">您确定要删除图片？</string>
+    <string name="route_over_title">路线结束</string>
+    <string name="route_over_message">您确定要结束该路线？</string>
+
+    <!-- 路线详细信息 -->
+    <string name="look_note">查看游记</string>
+    <string name="look_comment">查看评论</string>
+    <string name="copy_route_title">复制路线</string>
+    <string name="copy_route_message">您确定要复制该路线？</string>
+
+    <!-- 收藏和关注 -->
+    <string name="collection_file">收藏夹</string>
+    <string name="not_collect">取消收藏</string>
+    <string name="follow">关注</string>
+    <string name="not_follow">取消关注</string>
+
+    <string name="comment">评论</string>
+    <string name="add_comment">新增评论</string>
+    <string name="write_comment">写下你心中的想法或疑问。1-200字</string>
+
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="system_settings">系统设置</string>
+    <string name="no_picture_mode">无图模式</string>
+    <string name="upload_location">上传位置</string>
+    <string name="notification_settings">通知设置</string>
+    <string name="push_message">推送消息</string>
+    <string name="clear_cache">清除缓存</string>
+
+</resources>

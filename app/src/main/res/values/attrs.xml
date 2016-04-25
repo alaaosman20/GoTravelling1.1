@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DownTimerProgress">
+        <attr name="background_color" format="color|reference" />
+        <attr name="foreground_color" format="color|reference" />
+        <attr name="max_time" format="integer" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="circle_width" format="dimension" />
+    </declare-styleable>
+</resources>

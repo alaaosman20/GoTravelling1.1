@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="8dp">
+
+    <com.weicong.gotravelling.view.DownTimerProgress
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@id/progress">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/code"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.weicong.gotravelling.view.FlatButton
+        android:id="@+id/btn_re_get_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/progress"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="@string/re_get_code"
+        android:textSize="14sp" />
+
+    <com.weicong.gotravelling.view.FlatButton
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_register"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_re_get_code"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp" />
+
+</RelativeLayout>

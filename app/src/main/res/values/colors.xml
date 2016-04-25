@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <color name="rippleColor">#303F9F</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="red">#d32f2f</color>
+    <color name="blue">#536dfe</color>
+    <color name="orange">#ff5722</color>
+    <color name="green">#4caf50</color>
+    <color name="amber">#ffc107</color>
+    <color name="light_blue">#00bcd4</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="light_gray">#e3e3e3</color>
+    <color name="light_white">#f0f0f0</color>
+    <color name="text_color">#888888</color>
+    <color name="light_text_color">#999999</color>
+    <color name="light_black">#444444</color>
+
+    <color name="icon_blue">#0077d9</color>
+    <color name="pressed_color">#84c1ff</color>
+    <color name="transparent_press_color">#8884c1ff</color>
+    <color name="search_hint">#88ffffff</color>
+
+</resources>

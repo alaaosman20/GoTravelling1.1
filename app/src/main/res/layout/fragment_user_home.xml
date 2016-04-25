@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/iv_head_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_avatar"
+                />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18岁"
+                android:textColor="@color/light_black"
+                android:layout_below="@id/iv_head_image"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="12dp"/>
+
+            <ImageView
+                android:id="@+id/iv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_head_image"
+                android:layout_toRightOf="@id/tv_age"
+                android:src="@drawable/ic_gender_m_g"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/iv_head_image"
+                android:text="(添加一句话介绍)"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"/>
+
+            <include
+                android:id="@+id/line1"
+                layout="@layout/line_separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_below="@id/tv_description"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_head_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/iv_head_image"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_my_route"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/light_blue_selector"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_route_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_route"
+                        android:textColor="@color/light_text_color"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_follow_me"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/light_blue_selector"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginLeft="32dp">
+
+                    <TextView
+                        android:id="@+id/tv_follow_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_follow"
+                        android:textColor="@color/light_text_color"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_travelling"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:background="@drawable/light_blue_selector">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/travelling_route"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"/>
+
+                        <ImageView
+                            android:id="@+id/iv_next5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/next"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/line_separator" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_finished"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:background="@drawable/light_blue_selector">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/finished_route"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"/>
+
+                        <ImageView
+                            android:id="@+id/iv_next4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/next"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_finished_route_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:layout_toLeftOf="@id/iv_next4"
+                            android:textColor="@color/light_black"
+                            android:text="0"
+                            android:layout_marginRight="4dp"/>
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/line_separator" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:background="@drawable/light_blue_selector">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/comment_route"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"/>
+
+                        <ImageView
+                            android:id="@+id/iv_next3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/next"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_comment_route_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:layout_toLeftOf="@id/iv_next3"
+                            android:textColor="@color/light_black"
+                            android:text="0"
+                            android:layout_marginRight="4dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:background="@drawable/light_blue_selector">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/sign_sight"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"/>
+
+                        <ImageView
+                            android:id="@+id/iv_next1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/next"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_sign_sight_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:layout_toLeftOf="@id/iv_next1"
+                            android:textColor="@color/light_black"
+                            android:text="0"
+                            android:layout_marginRight="4dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_blue_selector"
+    android:clickable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_heat_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/heat_route"
+        android:textColor="@color/light_text_color"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_creator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/tv_route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_heat_route"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_route_favor"
+        android:layout_width="30dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/tv_route_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_to_white_selector"
+        android:gravity="center"
+        android:textColor="@drawable/favor_text_selector" />
+
+    <TextView
+        android:id="@+id/tv_route_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_route_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_route_favor"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="15sp" />
+
+</RelativeLayout>
